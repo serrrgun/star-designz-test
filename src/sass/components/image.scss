@@ -1,26 +1,15 @@
 .image {
   background-color: $light-gray;
 
-  // &__container {
-  //   position: relative;
-  //   max-width: 1920px;
-  //   width: 100%;
-  //   margin: 0 auto;
-  // }
+  &__container {
+    position: relative;
+  }
 
   &__text {
     position: absolute;
-    top: 20%;
+    top: 50%;
     width: 100%;
-
-    @media (min-width: 768px) {
-      top: 30%;
-    }
-
-    @media (min-width: 1200px) {
-      top: 50%;
-      width: 100%;
-    }
+    transform: translateY(-50%);
   }
 
   &__descr {
