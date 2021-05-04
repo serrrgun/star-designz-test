@@ -1,0 +1,18 @@
+.footer {
+  background-color: $white;
+
+  // &__wrapper {
+  //   max-width: 1920px;
+  //   width: 100%;
+  //   margin: 0 auto;
+  // }
+
+  &__follow {
+    width: 100%;
+    background-image: 
+      linear-gradient(to top, rgba(255,255,255, 0.5), rgba(255,255,255, 0.5)),
+      url(../assets/img/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

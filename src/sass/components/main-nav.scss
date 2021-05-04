@@ -1,0 +1,72 @@
+.main-nav {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: translateX(100%);
+  background-color: $white;
+  z-index: 1;
+  transition: .3s;
+
+  @media (min-width: 768px) {
+    position: relative;
+    width: auto;
+    height: auto;
+    transform: translateX(0);
+    background-color: transparent;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &__item {
+    margin-bottom: 2rem;
+
+    @media (min-width: 768px) {
+      margin-left: 2.4rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 1.12rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $light-gray;
+    transition: color .5s;
+
+    &--active {
+      color: $dark-gray;
+    }
+
+    &:hover {
+      color: $dark-gray;
+    }
+
+    &:active {
+      color: $gray;
+    }
+  }
+
+  &--open {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,27 @@
+.btn {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: $light-gray;
+  border-radius: 10px;
+  border: 1px solid $light-green;
+  transition: .5s;
+
+  &:hover {
+    color: $white;
+    background-color: $light-green;
+  }
+
+  &--middle {
+    font-size: 1.312rem;
+    line-height: 1.5rem;
+    color: $white;
+    background-color: $light-green;
+    border: none;
+    padding: .7rem 3rem;
+
+    &:hover {
+      background-color: $dark-gray;
+      color: $light-green;
+    }
+  }
+}
