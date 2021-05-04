@@ -1,7 +1,8 @@
 # Test task Star designz
 
-[Deploy](http://example.com/link "deploy")
-[Code](http://example.com/link "Code")
+[Deploy](https://star-designz-test.netlify.app/ "deploy")
+##
+[Code](https://github.com/serrrgun/star-designz-test "Code")
 
 ## Скачиваем проект
 ## команда npm i установит зависимости

@@ -67,15 +67,15 @@ module.exports = (env, options) => {
             new MiniCssExtractPlugin({
                 filename: 'style.css'
             }),
-            // new CopyPlugin({
-            //     patterns: [
-            //         {
-            //             from: "src/assets",
-            //             to: "assets",
-            //         },
+            new CopyPlugin({
+                patterns: [
+                    {
+                        from: 'src/favicon.ico',
+                        to: ''
+                    }
                     
-            //     ],
-            // }),
+                ],
+            }),
         ]
     }
 
